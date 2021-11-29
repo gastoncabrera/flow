@@ -1,19 +1,37 @@
 <template>
-  <div class="page_home">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse totam nisi
-    accusamus consequatur minima qui rem, rerum recusandae doloremque
-    reprehenderit et, nihil atque saepe laboriosam est ab excepturi deserunt
-    corrupti.
+  <div>
+    <Hero />
+    <Main />
+    <!-- <Pill /> -->
+    <RaisedMoney />
+    <!-- <FeaturedProjects />
+    <TableSelect />
+    <TableContainer /> -->
   </div>
 </template>
 
 <script>
+import Hero from "@/components/Home/Hero";
+import Main from "@/components/Home/Main";
+import Pill from "@/components/Home/Pill";
+import RaisedMoney from "@/components/Home/RaisedMoney";
+import FeaturedProjects from "@/components/Home/FeaturedProjects";
+import TableSelect from "@/components/Home/TableSelect";
+import TableContainer from "@/components/Home/TableContainer";
+
 export default {
-  components: {},
+  components: {
+    Hero,
+    Main,
+    Pill,
+    RaisedMoney,
+    FeaturedProjects,
+    TableSelect,
+    TableContainer,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.page_home {
-}
+@import "@/assets/scss/utils";
 </style>

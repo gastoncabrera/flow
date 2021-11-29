@@ -1,4 +1,3 @@
-prueba
 # chrysalis-guild-academy
 
 ## Build Setup
