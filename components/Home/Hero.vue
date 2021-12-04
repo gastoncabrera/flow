@@ -20,6 +20,7 @@ export default {};
 @import "@/assets/scss/utils";
 
 .hero {
+  margin-top: 100px;
   background-position: center;
   background-size: cover;
   background-image: url("/heroimage_mobile.jpg");

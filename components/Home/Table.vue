@@ -1,52 +1,124 @@
 <template>
-  <v-data-table
-    :headers="headers"
-    :items="desserts"
-    class="elevation-1 black--text prueba"
-    hide-default-footer
-    mobile-breakpoint="0"
-  >
-    <template v-slot:item.name="{ item }">
-      {{ item.img }}{{ item.name }}
-    </template>
-  </v-data-table>
+  <div class="custom_container">
+    <v-data-table
+      :headers="header"
+      :items="body"
+      class="table table--home"
+      hide-default-footer
+      mobile-breakpoint="0"
+      disable-sort
+      items-per-page="100"
+    >
+      <template v-slot:item.name="{ item }">
+        <div class="table__body">
+          {{ item.id }}
+
+          <img :src="`/pills/${item.img}`" alt="" class="table__body_image" />
+          {{ item.name }}
+        </div>
+      </template>
+
+      <template v-slot:item.sales="{ item }">
+        <div class="table__body">${{ item.sales }}</div>
+      </template>
+
+      <template v-slot:item.nft="{ item }">
+        <div class="table__body">
+          {{ item.nft }}
+        </div>
+      </template>
+
+      <template v-slot:item.change="{ item }">
+        <div
+          :class="item.change < 0 ? 'table__up' : 'table__down'"
+          class="table__body"
+        >
+          {{ item.change }}%
+        </div>
+      </template>
+
+      <template v-slot:item.users="{ item }">
+        <div class="table__body">
+          {{ item.users }}
+        </div>
+      </template>
+
+      <template v-slot:item.txns="{ item }">
+        <div class="table__body">
+          {{ item.txns }}
+        </div>
+      </template>
+    </v-data-table>
+  </div>
 </template>
 <script>
 export default {
-  data() {
-    return {
-      headers: [
-        {
-          text: "PROJECT",
-          value: "name",
-        },
-        { text: "SALES", value: "calories" },
-        { text: "NFTS", value: "fat" },
-      ],
-      desserts: [
-        {
-          name: "1 Frozen Yogurt",
-          img: "algo",
-          calories: 159,
-          fat: 6.0,
-        },
-        {
-          name: "2 Ice cream sandwich",
-          calories: 237,
-          fat: 9.0,
-        },
-        {
-          name: "3 Eclair",
-          calories: 262,
-          fat: 16.0,
-        },
-      ],
-    };
+  props: {
+    header: {
+      typeof: String,
+      require: true,
+    },
+
+    body: {
+      typeof: String,
+      require: true,
+    },
   },
 };
 </script>
 <style lang="scss">
-.prueba .prueba.prueba {
-  font-size: 30px;
+@import "@/assets/scss/utils";
+
+.table--home {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 24px;
+
+  .v-data-table__wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .table__body_image {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 16px;
+
+    @include breakpoint(md) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .title.title.title {
+    border-bottom: 4px solid black !important;
+    font-family: $font_1;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .table__body.table__body.table__body {
+    display: flex;
+    align-items: center;
+    font-family: $font_2;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+  }
+
+  .table__up.table__up.table__up {
+    color: #02d87e;
+  }
+
+  .table__down.table__down.table__down {
+    color: red;
+  }
 }
 </style>
