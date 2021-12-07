@@ -24,9 +24,9 @@ export default {
     return {
       proyects: [
         {
-          title: "~/static/title_genies.svg",
-          img_bg: "~/static/Rectangle 1.png",
-          img: "~/static/jakeGroup.png",
+          title: "title_genies.svg",
+          img_bg: "Rectangle 1.png",
+          img: "jakeGroup.png",
         },
 
         {

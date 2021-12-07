@@ -14,7 +14,7 @@
           {{ item.id }}
 
           <img
-            :src="`~/static/pills/${item.img}`"
+            :src="`/flow/pills/${item.img}`"
             alt=""
             class="table__body_image"
           />

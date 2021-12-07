@@ -3,7 +3,11 @@
     <div class="header__background">
       <div class="header__container custom_container">
         <nuxt-link to="/" class="header__image_link">
-          <img src="/logo_Flow_Wordmark.svg" alt="" class="header__image" />
+          <img
+            src="~/static/logo_Flow_Wordmark.svg"
+            alt=""
+            class="header__image"
+          />
         </nuxt-link>
 
         <MenuIcon class="header__menu" @Click="handleClick" />
@@ -100,7 +104,7 @@ export default {
   width: 100%;
 }
 
-.header__menu {
+.header__menu.header__menu.header__menu {
   display: flex;
   cursor: pointer;
 
