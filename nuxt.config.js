@@ -3,6 +3,9 @@ import colors from "vuetify/es5/util/colors";
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  router: {
+    base: "/flow/"
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -16,10 +19,17 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true },
-      { href: "https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap", rel:"stylesheet" }
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: true
+      },
+      {
+        href:
+          "https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap",
+        rel: "stylesheet"
+      }
     ]
-    
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
