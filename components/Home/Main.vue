@@ -1,31 +1,31 @@
 <template>
   <div class="main custom_container">
     <CardHero
-      background="url(/card/Frame_1.png)"
+      background="url(~/static/card/Frame_1.png)"
       title="2.6 MILLION"
       subtitle="Total Wallet Accounts"
       class="main__one"
     />
     <CardHero
-      background="url(/card/Frame_2.png)"
+      background="url(~/static/card/Frame_2.png)"
       title="175,000"
       subtitle="Monthly Active Users"
       class="main__two"
     />
     <CardHero
-      background="url(/card/Frame_3.png)"
+      background="url(~/static/card/Frame_3.png)"
       title="5,000+"
       subtitle="Developers Building on Flow"
       class="main__three"
     />
     <CardHero
-      background="url(/card/Frame_4.png)"
+      background="url(~/static/card/Frame_4.png)"
       title="675+"
       subtitle="Active Projects"
       class="main__four"
     />
     <CardHero
-      background="url(/card/Frame_5.png)"
+      background="url(~/static/card/Frame_5.png)"
       title="350+"
       subtitle="Network Nodes"
       class="main__five"
@@ -45,31 +45,31 @@ export default {
         {
           title: "2.6 MILLION",
           subtitle: "Total Wallet Accounts",
-          img: "url(/card/Frame_1.png)",
+          img: "url(~/static/card/Frame_1.png)",
         },
 
         {
           title: "175,000",
           subtitle: "Monthly Active Users",
-          img: "url(/card/Frame_2.png)",
+          img: "url(~/static/card/Frame_2.png)",
         },
 
         {
           title: "5,000+",
           subtitle: "Developers Building on Flow",
-          img: "url(/card/Frame_3.png)",
+          img: "url(~/static/card/Frame_3.png)",
         },
 
         {
           title: "675+",
           subtitle: "Active Projects",
-          img: "url(/card/Frame_4.png)",
+          img: "url(~/static/card/Frame_4.png)",
         },
 
         {
           title: "350+",
           subtitle: "Network Nodes",
-          img: "url(/card/Frame_5.png)",
+          img: "url(~/static/card/Frame_5.png)",
         },
       ],
     };

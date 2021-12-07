@@ -4,10 +4,14 @@
       <h1 class="hero__left">A new world awaits #onflow</h1>
 
       <nuxt-link to="" class="hero__center">
-        <img class="hero__center_image" src="/play.svg" alt="" />
+        <img class="hero__center_image" src="~/static/play.svg" alt="" />
       </nuxt-link>
 
-      <img src="/FlowLogo_Horizontal_Green.svg" alt="" class="hero__right" />
+      <img
+        src="~/static//FlowLogo_Horizontal_Green.svg"
+        alt=""
+        class="hero__right"
+      />
     </div>
   </div>
 </template>
@@ -23,10 +27,10 @@ export default {};
   margin-top: 100px;
   background-position: center;
   background-size: cover;
-  background-image: url("/heroimage_mobile.jpg");
+  background-image: url("~/static/heroimage_mobile.jpg");
 
   @include breakpoint(md) {
-    background-image: url("/bg.jpg");
+    background-image: url("~/static/bg.jpg");
     min-height: 550px;
   }
 

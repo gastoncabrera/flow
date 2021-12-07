@@ -6,7 +6,7 @@
       v-for="pill in pills"
       :key="pill.title"
     >
-      <img class="pill__image" :src="`/pills/${pill.image}`" alt="" />
+      <img class="pill__image" :src="`~/static/pills/${pill.image}`" alt="" />
       <span class="pill__title">{{ pill.title }}</span>
     </nuxt-link>
   </div>

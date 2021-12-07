@@ -13,7 +13,11 @@
         <div class="table__body">
           {{ item.id }}
 
-          <img :src="`/pills/${item.img}`" alt="" class="table__body_image" />
+          <img
+            :src="`~/static/pills/${item.img}`"
+            alt=""
+            class="table__body_image"
+          />
           {{ item.name }}
         </div>
       </template>

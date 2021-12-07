@@ -31,7 +31,7 @@
     <div class="table_container custom_container">
       <div class="table_container__content">
         <span v-show="selected === 'primary'" class="table_container__title">
-          <img src="/pm.png" alt="" class="table_container__image" />
+          <img src="~/static/pm.png" alt="" class="table_container__image" />
           Powered by Flowverse.co - discoverability platform for Flow Blockchain
           projects
         </span>
@@ -39,7 +39,7 @@
         <div v-show="selected === 'secondary'">
           <span class="table_container__title">
             <img
-              src="/graffle_logo.png"
+              src="~/static/graffle_logo.png"
               alt=""
               class="table_container__image"
             />

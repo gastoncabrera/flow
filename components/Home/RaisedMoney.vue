@@ -7,8 +7,16 @@
     </div>
 
     <div class="raised_money__container_money custom_container">
-      <img class="raised_money__image_mobile" src="J-Balvin_media.png" alt="" />
-      <img class="raised_money__image_desktop" src="j-balvin.png" alt="" />
+      <img
+        class="raised_money__image_mobile"
+        src="~/static/J-Balvin_media.png"
+        alt=""
+      />
+      <img
+        class="raised_money__image_desktop"
+        src="~/static/j-balvin.png"
+        alt=""
+      />
 
       <div class="raised_money__million_wrapper">
         <div class="raised_money__million">
