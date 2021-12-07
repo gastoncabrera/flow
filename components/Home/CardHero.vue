@@ -1,5 +1,5 @@
 <template>
-  <div class="card_hero" :style="{ 'background-image': `/flow/${background}` }">
+  <div class="card_hero" :style="{ 'background-image': background }">
     <span class="card_hero__title">{{ title }}</span>
     <p class="card_hero__subtitle">{{ subtitle }}</p>
   </div>
@@ -10,7 +10,7 @@ export default {
   props: {
     background: {
       type: String,
-      default: "url(/card/Frame_4.png)",
+      default: "url(/flow/card/Frame_4.png)",
     },
 
     title: {
