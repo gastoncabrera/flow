@@ -1,10 +1,11 @@
 import colors from "vuetify/es5/util/colors";
+const baseRouter = "/flow/";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   router: {
-    base: "/flow/"
+    base: baseRouter
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -17,7 +18,7 @@ export default {
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "~/static/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: `${baseRouter}favicon.ico` },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",

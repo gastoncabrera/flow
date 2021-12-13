@@ -1,7 +1,9 @@
 <template>
-  <v-app class="debugger">
+  <v-app>
     <Header />
+
     <slot />
+
     <Footer />
   </v-app>
 </template>

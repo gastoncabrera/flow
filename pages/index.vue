@@ -1,9 +1,14 @@
 <template>
   <div class="home">
+
     <Hero />
+
     <Main />
+
     <RaisedMoney />
+
     <FeaturedProjects />
+    
     <TableSelect />
   </div>
 </template>
