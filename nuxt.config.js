@@ -1,5 +1,5 @@
 import colors from "vuetify/es5/util/colors";
-const baseRouter = "/flow/";
+const baseRouter = "/";
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -10,7 +10,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Flow",
+    title: "orlando-nft",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
