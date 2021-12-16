@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>orlando nft</h1>
+    <p>descripcion</p>
   </div>
 </template>
 
