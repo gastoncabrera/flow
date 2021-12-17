@@ -1,12 +1,32 @@
 <template>
   <div>
-    <h1>orlando nft</h1>
-    <p>descripcion</p>
+    <Hero />
+
+    <PropertyImage />
+
+    <Dao />
+
+    <Apartment />
+
+    <House />
+
+    <hr />
+
+    <Questions />
   </div>
 </template>
 
 <script>
-export default {};
+import Hero from "@/components/Home/Hero";
+import PropertyImage from "@/components/Home/PropertyImage";
+import Dao from "@/components/Home/Dao";
+import Apartment from "@/components/Home/Apartment";
+import House from "@/components/Home/House";
+import Questions from "@/components/Home/Questions";
+
+export default {
+  components: { Hero, PropertyImage, Dao, Apartment, House, Questions },
+};
 </script>
 
 <style lang="scss" scoped>
